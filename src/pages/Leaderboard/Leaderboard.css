@@ -1,0 +1,33 @@
+.leaderboardHeader {
+  font-family: "Iceland", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px rgb(12, 59, 129), 0 0 20px #1f49ab;
+  font-size: 80px;
+  padding-top: 60px;
+  font-weight: 700;
+  color: #a9cdff;
+  opacity: 0.9;
+  margin: 0;
+  text-transform: uppercase;
+  /* animation: letter-flicker 2s linear infinite; */
+}
+
+.leaderboardItems {
+  min-height: calc(100vh - 144px);
+  z-index: 1;
+  position: relative;
+}
+
+
+@media screen and (max-width: 550px) {
+  .leaderboardHeader {
+    font-size: 40px;
+  }
+}
+
+.loader {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

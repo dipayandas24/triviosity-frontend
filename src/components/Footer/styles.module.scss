@@ -1,0 +1,45 @@
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: white;
+}
+
+a.facebook {
+  color: white;
+}
+
+a.instagram {
+  color: white;
+}
+
+.icons a {
+  margin: 12px;
+}
+
+.icons a svg {
+  font-size: 1.7em;
+}
+
+a.github {
+  color: white;
+}
+.logods {
+  height: 36px;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-height: 72px;
+  z-index: 10;
+  position: relative;
+}
+@media screen and (max-width: 450px) {
+  .icons a {
+    margin: 8px;
+  }
+}

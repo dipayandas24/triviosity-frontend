@@ -1,0 +1,193 @@
+.fic {
+  font-family: "Iceland", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px rgb(255 171 0), 0 0 20px #ff7300;
+  font-size: 12rem;
+  color: #e8ce32;
+  opacity: 0.9;
+  margin: 0;
+}
+
+.play_now {
+  display: flex;
+}
+
+.play {
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.5rem;
+  margin: auto;
+  color: var(--font-color);
+  text-shadow: 0 0 5px var(--font-color);
+  margin-top: 104px;
+  display: flex;
+}
+
+a {
+  color: #afecff;
+  text-decoration: none;
+}
+
+.arrow {
+  height: 50px;
+  margin-left: 10px;
+  text-shadow: 0 0 5px #afecff;
+}
+
+.time {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-not-live {
+  font-family: "Iceland", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000;
+  font-size: 2rem;
+  color: #edafaf;
+  opacity: 0.9;
+  animation: fadeOut 0.2s linear forwards 5s;
+}
+
+.time-up {
+  font-family: "Iceland", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+  color: #edafaf;
+  opacity: 0.9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.time-up p {
+  max-width: 40%;
+  padding: 30px;
+  background: rgba(3, 61, 80, 0.7);
+  border: 3px solid var(--button-border);
+  backdrop-filter: blur(16px);
+  border-radius: 0px 12px;
+  text-shadow: 0 0 4px #00ff00, 0 0 12px #00ff00;
+  font-size: 1.5rem;
+  color: #afedb1;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 0.9;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.landing-container {
+  min-height: calc(100vh - 144px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  position: relative;
+}
+
+.landing-sign-in {
+  font-family: "Orbitron", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  color: #ffa200;
+  opacity: 0.9;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  background: rgba(123, 97, 5, 0.204);
+  box-shadow: 0 0 10px rgb(255 171 0), 0 0 20px #ff7300;
+  border: 2px solid rgb(255 171 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-sign-in-2 {
+  font-family: "Orbitron", cursive;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.5rem;
+  color: #00b3ff;
+  opacity: 0.9;
+  margin: 0;
+  padding: 12px 24px;
+  border: none;
+  text-transform: uppercase;
+  backdrop-filter: blur(8px);
+  background: rgba(3, 61, 80, 0.4);
+  box-shadow: 0 0 10px #00b3ff, 0 0 20px #00b3ff;
+  border: 2px solid var(--button-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .fic {
+    font-size: 8rem;
+  }
+  .landing-sign-in {
+    margin-top: 60px;
+  }
+  .time-up p {
+    max-width: 90%;
+  }
+}
+@media screen and (max-width: 650px) {
+  .fic {
+    font-size: 6rem;
+    font-weight: 600;
+  }
+}
+@media screen and (max-width: 480px) {
+  .fic {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .play {
+    font-size: 1.5rem;
+    margin: auto;
+    margin-top: 228px;
+    display: flex;
+    font-weight: bolder;
+  }
+
+  .arrow {
+    height: 30px;
+    margin-left: 10px;
+    text-shadow: 0 0 5px #afecff;
+  }
+
+  .landing-sign-in {
+    margin-top: 120px;
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 330px) {
+  .fic {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+}
